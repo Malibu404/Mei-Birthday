@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  background-color: #ffebf3;
+  color: #ff1493;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  padding: 20px;
+  margin-top: 10%;
+}
+
+h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.love-quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  animation: slideIn 2s ease-in-out;
+}
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#image1 {
+  background-image: url(https://assets.onecompiler.app/438a5mq9w/438acgtsk/472519966_18293821816235034_6406613110915099617_n.jpg); /* Replace with your image path */
+}
+
+#image2 {
+  background-image: url(https://assets.onecompiler.app/438a5mq9w/438acgtsk/Screen%20Shot%202025-02-06%20at%2023.14.38.png); /* Replace with your image path */
+}
+
+#image3 {
+  background-image: url(https://assets.onecompiler.app/438a5mq9w/438acgtsk/476184733_1839681156569024_2774270782638530269_n.jpg); /* Replace with your image path */
+}
+
+.hidden-text {
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
